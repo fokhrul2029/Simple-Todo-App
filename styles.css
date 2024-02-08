@@ -1,0 +1,80 @@
+/* Replesment CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.801);
+  color: antiquewhite;
+  scroll-behavior: smooth;
+}
+/* Common CSS  */
+.btn {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: darkcyan;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.empty {
+  border-color: #a52a2ab4 !important;
+}
+.btn:hover {
+  background-color: rgb(3, 116, 116);
+}
+.btn:active {
+  background-color: darkcyan;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Form Content  */
+form {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+form input[type="text"] {
+  grid-column: span 8;
+  background-color: #0000005e;
+  color: antiquewhite;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  outline: none;
+}
+form input[type="submit"] {
+  grid-column: span 2;
+}
+/* Todo List Section  */
+.todo-list ul {
+  list-style: none;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.todo-list ul li {
+  grid-column: span 7;
+  padding: 10px 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+.todo-list .btn {
+  grid-column: span 3;
+}
